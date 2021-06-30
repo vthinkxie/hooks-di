@@ -1,7 +1,11 @@
 import { Injectable } from "injection-js";
-import { HttpService } from "./http.service";
+import { HttpServiceAbstract } from "./http.service.abstract";
 
 @Injectable()
 export class MailService {
-  constructor(public httpService: HttpService) {}
+  getCount(): number {
+    return this.httpService.getCount();
+  }
+
+  constructor(public httpService: HttpServiceAbstract) {}
 }

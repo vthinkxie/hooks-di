@@ -25,6 +25,7 @@ module.exports = {
     project: "./tsconfig.json",
   },
   rules: {
+    "class-methods-use-this": "off",
     "no-console": "off",
     "linebreak-style": "off",
     "react/prop-types": "off",
